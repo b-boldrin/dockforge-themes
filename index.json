@@ -2,6 +2,42 @@
   "schemaVersion": 1,
   "themes": [
     {
+      "id": "ambar-crt",
+      "name": "Âmbar CRT",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "An amber phosphor monitor from the 80s: square corners, scanlines and a glowing cursor under the app in front.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "dark",
+        "retro"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/ambar-crt/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/ambar-crt/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 101232,
+          "sha256": "8efb7157cfb84279e343c5dffc68c9612602240201e6f5257e1164bc7e5701a6"
+        },
+        {
+          "path": "styles.css",
+          "size": 1475,
+          "sha256": "bc3d5ba087e9299834347da87fae063b0c4c957e8014e061fb742f949d6ca7d9"
+        },
+        {
+          "path": "theme.json",
+          "size": 500,
+          "sha256": "fe3245c8389e5607fdf696eed9f36f499173d16c2c6be6732e86c267485882f4"
+        }
+      ]
+    },
+    {
       "id": "forge-glass",
       "name": "Forge Glass",
       "version": "1.0.0",
@@ -145,6 +181,42 @@
           "path": "theme.json",
           "size": 472,
           "sha256": "83a683a939c3e33c0b05ebb37c3059ffab3cafdded8731ca5c57a5d10792a5b5"
+        }
+      ]
+    },
+    {
+      "id": "papel",
+      "name": "Papel",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "A light dock: warm white paper, a soft shadow and ink-dark marks under the open apps.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "light",
+        "minimal"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/papel/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/papel/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 93609,
+          "sha256": "af0834bd453252074f5fb10426909dbc132f4593443c2b61fab6c878efcd73c6"
+        },
+        {
+          "path": "styles.css",
+          "size": 1182,
+          "sha256": "c20abc410f67122b3f2fbe1ce797f2f5134e7fc4eb7f9719634905a862f19c92"
+        },
+        {
+          "path": "theme.json",
+          "size": 469,
+          "sha256": "cf5026a08ac9f24f8ec24a43a683d92f43d1ea7890d7f3e5b6cec1a080a10f33"
         }
       ]
     }
