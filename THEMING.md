@@ -50,22 +50,31 @@ variables (as above) and it will keep working when someone tweaks it.
 ## 3. Classes (for advanced themes)
 
 ```html
-<div class="df-dock" data-position="bottom" data-layout="float">
-  <span class="df-group">                          <!-- only when groups are on -->
-    <span class="df-group-dot is-current"></span> … 4 dots
-  </span>
-  <button class="df-item is-running is-active is-pinned">
-    <img class="df-icon" />                      <!-- or <span class="df-icon df-icon--fallback">A</span> -->
-    <span class="df-indicator"></span>
-    <span class="df-tooltip">App name</span>
-  </button>
-  <span class="df-separator"></span>             <!-- between pinned and other open apps -->
-  …
+<div class="df-dock" data-position="bottom" data-layout="float" data-align="center">
+  <span class="df-island-now">…</span>             <!-- island layout only: the app in front -->
+  <div class="df-apps">                           <!-- the app icons (invisible box outside the island) -->
+    <span class="df-group">                        <!-- only when groups are on -->
+      <button class="df-group-dot is-current"></button> … 4 dots
+    </span>
+    <button class="df-item is-running is-active is-pinned">
+      <img class="df-icon" />                    <!-- or <span class="df-icon df-icon--fallback">A</span> -->
+      <span class="df-indicator"></span>
+      <span class="df-tooltip">App name</span>
+    </button>
+    <span class="df-separator"></span>           <!-- between favorites and other open apps -->
+    …
+  </div>
   <span class="df-spacer"></span>                 <!-- grows in the edge-to-edge layout -->
   <div class="df-widget df-media">                <!-- "now playing", when turned on -->
     <img class="df-media-cover" />
     <span class="df-media-text"><span class="df-media-title"></span><span class="df-media-artist"></span></span>
     <span class="df-media-buttons"><button class="df-media-button"></button> …</span>
+  </div>
+  <div class="df-widget df-system">               <!-- processor, memory, battery -->
+    <span class="df-meter">
+      <span class="df-meter-ring"></span>
+      <span class="df-meter-text"><span class="df-meter-label">CPU</span><span class="df-meter-value">23%</span></span>
+    </span> …
   </div>
   <div class="df-widget df-clock"><span class="df-clock-time"></span><span class="df-clock-date"></span></div>
 </div>
@@ -73,10 +82,17 @@ variables (as above) and it will keep working when someone tweaks it.
 
 - `.is-running`: the app has at least one open window.
 - `.is-active`: the app was in front before you clicked the dock.
-- `.is-pinned`: the user pinned the app. A pinned app without `.is-running` is closed.
+- `.is-pinned`: a favorite, or an app the user moved to a group. Without `.is-running` it is closed.
+- `.is-launching`: a closed app was just clicked and is starting (its icon bounces).
+- `.df-dock.is-dragging`: an icon is being dragged to a group. The group dots grow into numbered
+  targets; the one under the pointer gets `.is-over`.
+- `.df-meter` carries `--df-meter` (0–100), the number its ring shows. `.is-low` marks a low battery.
 - `data-position`: `bottom`, `top`, `left` or `right`, the screen edge the dock is on. Side docks
   are vertical (`flex-direction: column`).
-- `data-layout`: `float` (sized to its icons) or `bar` (from one end of the screen to the other).
+- `data-layout`: `float` (sized to its icons), `bar` (from one end of the screen to the other) or
+  `island` (a small pill with the app in front and the widgets; the other icons appear when the
+  pointer is over it).
+- `data-align`: `start`, `center` or `end`, where along its edge a float or island dock sits.
 - `.df-item:hover`, `::before`, `::after`, animations and `@keyframes` all work.
 
 ## 4. Rules
