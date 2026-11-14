@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "papel",
+  "name": "Papel",
+  "version": "1.0.0",
+  "author": { "name": "DockForge", "github": "b-boldrin" },
+  "description": "A light dock: warm white paper, a soft shadow and ink-dark marks under the open apps.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.3.0",
+  "tags": ["light", "minimal"],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}

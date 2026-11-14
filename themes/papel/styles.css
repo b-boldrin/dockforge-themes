@@ -1,0 +1,42 @@
+/* Papel — a light dock, for light wallpapers and people who do not live in dark mode. */
+
+.df-dock {
+  --df-gap: 8px;
+  --df-padding: 9px 12px;
+  --df-radius: 16px;
+  --df-bg: #f6f2ea;
+  --df-border: 1px solid rgba(60, 48, 30, 0.14);
+  --df-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 14px 30px rgba(40, 30, 15, 0.22);
+  --df-hover-scale: 1.22;
+  --df-hover-lift: -6px;
+  --df-indicator-color: rgba(50, 40, 28, 0.38);
+  --df-indicator-active-color: #c2452d;
+  --df-indicator-offset: -6px;
+  --df-tooltip-bg: #2b2620;
+  --df-tooltip-color: #f6f2ea;
+  --df-separator-color: rgba(60, 48, 30, 0.2);
+  --df-widget-bg: rgba(60, 48, 30, 0.07);
+  --df-widget-color: #2b2620;
+}
+
+/* The open app is underlined like a word marked with a pen. */
+.df-item.is-running .df-indicator {
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+}
+.df-item.is-active .df-indicator {
+  width: 20px;
+}
+
+.df-empty {
+  color: #2b2620;
+}
+/* Numbers on the group dots while dragging: dark on the pale dots, pale on the marked one. */
+.df-dock.is-dragging .df-group-dot {
+  color: #2b2620;
+}
+.df-dock.is-dragging .df-group-dot.is-over,
+.df-dock.is-dragging .df-group-dot.is-current {
+  color: #f6f2ea;
+}
