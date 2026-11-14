@@ -1,0 +1,28 @@
+name: Problem with a theme
+description: A theme looks broken or contains something it should not
+labels: ["theme-report"]
+body:
+  - type: input
+    id: theme
+    attributes:
+      label: Theme id
+      placeholder: forge-glass
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - Looks broken
+        - Copyrighted or stolen content
+        - Offensive content
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details and screenshot
+    validations:
+      required: true

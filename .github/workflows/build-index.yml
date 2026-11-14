@@ -1,0 +1,38 @@
+name: Build theme index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "themes/**"
+      - "scripts/**"
+      - "schema/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: node scripts/build-index.mjs
+      - name: Commit index.json if it changed
+        run: |
+          if git diff --quiet -- index.json; then
+            echo "index.json unchanged"; exit 0
+          fi
+          git config user.name "dockforge-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git commit -m "chore: rebuild theme index"
+          git push

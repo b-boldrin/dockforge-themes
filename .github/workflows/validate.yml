@@ -1,0 +1,48 @@
+name: Validate theme PR
+
+on:
+  pull_request:
+    paths:
+      - "themes/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Find changed themes
+        id: changed
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          files=$(git diff --name-only "$base"...HEAD)
+          echo "Changed files:"; echo "$files"
+          outside=$(echo "$files" | grep -v '^themes/' || true)
+          if [ -n "$outside" ]; then
+            echo "::error::A theme PR may only change files inside themes/. Also changed: $outside"
+            exit 1
+          fi
+          ids=$(echo "$files" | cut -d/ -f2 | sort -u | tr '\n' ' ')
+          count=$(echo "$ids" | wc -w)
+          if [ "$count" -gt 1 ]; then
+            echo "::error::Please send one theme per pull request (found: $ids)"
+            exit 1
+          fi
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+
+      - name: Validate
+        run: |
+          for id in ${{ steps.changed.outputs.ids }}; do
+            if [ -d "themes/$id" ]; then node scripts/validate.mjs "$id"; fi
+          done
