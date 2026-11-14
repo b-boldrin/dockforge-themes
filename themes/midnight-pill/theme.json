@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "midnight-pill",
+  "name": "Midnight Pill",
+  "version": "1.0.0",
+  "author": { "name": "DockForge", "github": "dockforge" },
+  "description": "A compact, fully rounded black pill with neon purple accents and small icons.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.1.0",
+  "tags": ["dark", "neon", "minimal"],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}

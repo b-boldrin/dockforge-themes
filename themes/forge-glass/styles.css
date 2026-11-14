@@ -1,0 +1,24 @@
+/* Forge Glass — the default DockForge theme.
+   A theme only overrides the --df-* variables and the .df-* classes.
+   Full list: THEMING.md in this repository. */
+
+.df-dock {
+  --df-icon-size: 48px;
+  --df-gap: 10px;
+  --df-padding: 10px;
+  --df-radius: 24px;
+  --df-bg: linear-gradient(180deg, rgba(48, 48, 58, 0.78), rgba(24, 24, 30, 0.82));
+  --df-border: 1px solid rgba(255, 255, 255, 0.14);
+  --df-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --df-hover-scale: 1.3;
+  --df-hover-lift: -10px;
+  --df-indicator-color: rgba(255, 255, 255, 0.55);
+  --df-indicator-active-color: #8fd0ff;
+  --df-tooltip-bg: rgba(20, 20, 26, 0.92);
+  --df-tooltip-color: #f2f2f5;
+}
+
+.df-item.is-active .df-indicator {
+  width: 14px;
+  border-radius: 3px;
+}

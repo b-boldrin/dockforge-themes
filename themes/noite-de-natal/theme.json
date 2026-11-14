@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "noite-de-natal",
+  "name": "Noite de Natal",
+  "version": "1.0.0",
+  "author": { "name": "DockForge", "github": "dockforge" },
+  "description": "Deep Christmas red with a gold edge and a warm golden active indicator.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.2.0",
+  "tags": ["holiday", "dark"],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}

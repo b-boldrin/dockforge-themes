@@ -1,0 +1,21 @@
+/* Natal Cristal — pine-green glass, icy cyan edge, red running indicator. */
+
+.df-dock {
+  --df-icon-size: 46px;
+  --df-gap: 8px;
+  --df-padding: 9px 14px;
+  --df-radius: 20px;
+  --df-bg: rgba(16, 52, 46, 0.78);
+  --df-border: 1px solid rgba(111, 227, 220, 0.55);
+  --df-shadow: 0 0 24px rgba(111, 227, 220, 0.28), 0 12px 28px rgba(0, 0, 0, 0.4);
+  --df-hover-scale: 1.32;
+  --df-hover-lift: -8px;
+  --df-indicator-color: rgba(226, 82, 79, 0.8);
+  --df-indicator-active-color: #6fe3dc;
+  --df-tooltip-bg: #0d2f2a;
+  --df-tooltip-color: #e8f3f0;
+}
+
+.df-item.is-active .df-icon {
+  filter: drop-shadow(0 0 6px rgba(111, 227, 220, 0.6));
+}

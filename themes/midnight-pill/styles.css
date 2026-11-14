@@ -1,0 +1,21 @@
+/* Midnight Pill — compact black pill with neon accents. */
+
+.df-dock {
+  --df-icon-size: 38px;
+  --df-gap: 6px;
+  --df-padding: 8px 16px;
+  --df-radius: 999px;
+  --df-bg: #0b0b10;
+  --df-border: 1px solid rgba(168, 85, 247, 0.45);
+  --df-shadow: 0 0 24px rgba(168, 85, 247, 0.35);
+  --df-hover-scale: 1.18;
+  --df-hover-lift: -4px;
+  --df-indicator-color: rgba(168, 85, 247, 0.6);
+  --df-indicator-active-color: #e879f9;
+  --df-tooltip-bg: #1a1027;
+  --df-tooltip-color: #f5e9ff;
+}
+
+.df-item.is-active .df-icon {
+  filter: drop-shadow(0 0 6px rgba(232, 121, 249, 0.7));
+}

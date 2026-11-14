@@ -1,0 +1,21 @@
+/* Noite de Natal — deep red with gold. */
+
+.df-dock {
+  --df-icon-size: 46px;
+  --df-gap: 8px;
+  --df-padding: 9px 14px;
+  --df-radius: 26px;
+  --df-bg: rgba(86, 18, 26, 0.86);
+  --df-border: 1px solid rgba(240, 196, 92, 0.55);
+  --df-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+  --df-hover-scale: 1.28;
+  --df-hover-lift: -7px;
+  --df-indicator-color: rgba(240, 196, 92, 0.55);
+  --df-indicator-active-color: #f0c45c;
+  --df-tooltip-bg: #3d0d14;
+  --df-tooltip-color: #fbeed0;
+}
+
+.df-item.is-active .df-icon {
+  filter: drop-shadow(0 0 6px rgba(240, 196, 92, 0.6));
+}

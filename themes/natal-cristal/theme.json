@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "natal-cristal",
+  "name": "Natal Cristal",
+  "version": "1.0.0",
+  "author": { "name": "DockForge", "github": "dockforge" },
+  "description": "Frosted pine-green glass with an icy cyan edge and a red indicator, for the holiday season.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.2.0",
+  "tags": ["holiday", "dark", "glass"],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}

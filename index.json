@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "forge-glass",
+      "name": "Forge Glass",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "dockforge"
+      },
+      "description": "The default DockForge look: a frosted dark glass dock with soft shadows and a gentle hover lift.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "glass",
+        "dark",
+        "minimal"
+      ],
+      "minAppVersion": "0.1.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/forge-glass/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/forge-glass/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 128600,
+          "sha256": "8779aabaaf2a6542a5d9e04d51543860c94c89cb6196f2849dd3767c973939fd"
+        },
+        {
+          "path": "styles.css",
+          "size": 781,
+          "sha256": "3d42989236a611b106c4ed19d161f17161aa1133246d404c728880ff75b9b190"
+        },
+        {
+          "path": "theme.json",
+          "size": 500,
+          "sha256": "2cc3b4a3d01232a4e8a935853d61d1e49c6b2062220b7447b771b7ebaacfb64f"
+        }
+      ]
+    },
+    {
+      "id": "midnight-pill",
+      "name": "Midnight Pill",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "dockforge"
+      },
+      "description": "A compact, fully rounded black pill with neon purple accents and small icons.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "dark",
+        "neon",
+        "minimal"
+      ],
+      "minAppVersion": "0.1.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/midnight-pill/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/midnight-pill/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 129255,
+          "sha256": "7ce13181289c84702c062973a72934b121add497219d2d237c98f2347efabefe"
+        },
+        {
+          "path": "styles.css",
+          "size": 575,
+          "sha256": "7f4dd2fe15c1ca2cc781781a45c39cbddfa7decc778a1f2157a1c09783bf48f2"
+        },
+        {
+          "path": "theme.json",
+          "size": 484,
+          "sha256": "5be0f39a04c83dc09d56bf4dcaf09f8b533b62545e8ae40e9ffc55251cda6083"
+        }
+      ]
+    },
+    {
+      "id": "natal-cristal",
+      "name": "Natal Cristal",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "dockforge"
+      },
+      "description": "Frosted pine-green glass with an icy cyan edge and a red indicator, for the holiday season.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "holiday",
+        "dark",
+        "glass"
+      ],
+      "minAppVersion": "0.2.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/natal-cristal/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/natal-cristal/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 155737,
+          "sha256": "2b75728401a45ccaae920d5b7f878c6a8f48430fee1ed81c4d506e43068f6247"
+        },
+        {
+          "path": "styles.css",
+          "size": 640,
+          "sha256": "cef9d5ddcb4a151b117106253d89c40bea2b1885241ec9dfdbfb226f317e4bf0"
+        },
+        {
+          "path": "theme.json",
+          "size": 499,
+          "sha256": "c30b65a7b9716a5237be8a3ddc420ad6bde2967b3149760424bb3190c5d8634a"
+        }
+      ]
+    },
+    {
+      "id": "noite-de-natal",
+      "name": "Noite de Natal",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "dockforge"
+      },
+      "description": "Deep Christmas red with a gold edge and a warm golden active indicator.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "holiday",
+        "dark"
+      ],
+      "minAppVersion": "0.2.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/noite-de-natal/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/noite-de-natal/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 140236,
+          "sha256": "0fe124b0aa5f1b3039ae1537ee0ed7f8267dea7b64135c56eaed981bd7a01e1c"
+        },
+        {
+          "path": "styles.css",
+          "size": 569,
+          "sha256": "e83e42d4c93d911c60462635a4abf91328ff220076d7d90ccbb8fe482b9fed93"
+        },
+        {
+          "path": "theme.json",
+          "size": 472,
+          "sha256": "83a683a939c3e33c0b05ebb37c3059ffab3cafdded8731ca5c57a5d10792a5b5"
+        }
+      ]
+    }
+  ]
+}
