@@ -1,0 +1,57 @@
+/* Âmbar CRT — an amber phosphor screen: square, lined, glowing. */
+
+.df-dock {
+  --df-gap: 10px;
+  --df-padding: 8px 12px;
+  --df-radius: 3px;
+  --df-bg: repeating-linear-gradient(0deg, rgba(255, 176, 0, 0.05) 0 1px, transparent 1px 3px), #150d02;
+  --df-border: 1px solid #ffb000;
+  --df-shadow: 0 0 0 3px #150d02, 0 0 22px rgba(255, 176, 0, 0.35);
+  --df-hover-scale: 1.15;
+  --df-hover-lift: -4px;
+  --df-indicator-color: rgba(255, 176, 0, 0.5);
+  --df-indicator-active-color: #ffb000;
+  --df-indicator-offset: -6px;
+  --df-tooltip-bg: #ffb000;
+  --df-tooltip-color: #150d02;
+  --df-separator-color: rgba(255, 176, 0, 0.4);
+  --df-widget-bg: rgba(255, 176, 0, 0.1);
+  --df-widget-color: #ffcf66;
+  --df-font: Consolas, "Cascadia Mono", "Courier New", monospace;
+}
+
+.df-icon {
+  filter: sepia(0.35) saturate(1.1);
+}
+.df-item:hover .df-icon {
+  filter: none;
+}
+
+/* A block cursor under each open app; it blinks under the one in front. */
+.df-item.is-running .df-indicator {
+  width: 8px;
+  height: 3px;
+  border-radius: 0;
+}
+.df-item.is-active .df-indicator {
+  width: 14px;
+  box-shadow: 0 0 8px #ffb000;
+  animation: ambar-blink 1.1s steps(2, jump-none) infinite;
+}
+@keyframes ambar-blink {
+  from { opacity: 1; }
+  to { opacity: 0.25; }
+}
+
+.df-widget {
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.df-tooltip {
+  border-radius: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .df-item.is-active .df-indicator { animation: none; }
+}
