@@ -1,0 +1,14 @@
+{
+  "name": "dockforge-themes",
+  "private": true,
+  "type": "module",
+  "description": "Community themes for DockForge",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "index": "node scripts/build-index.mjs",
+    "test": "node --test scripts/validate.test.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0"
+  }
+}

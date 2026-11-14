@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dockforge/dockforge-themes/schema/theme.schema.json",
+  "title": "DockForge theme manifest",
+  "description": "The theme.json file at the root of every DockForge theme folder.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "version", "author", "description", "license", "type", "preview", "styles"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": {
+      "description": "Version of this manifest format. Only 1 exists today.",
+      "const": 1
+    },
+    "id": {
+      "description": "Unique id. Must match the folder name. Lowercase letters, numbers and single dashes.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 40
+    },
+    "name": { "type": "string", "minLength": 2, "maxLength": 40 },
+    "version": {
+      "description": "Semantic version of the theme, e.g. 1.0.0",
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "author": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "github": {
+          "description": "GitHub username, without @",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$"
+        }
+      }
+    },
+    "description": { "type": "string", "minLength": 10, "maxLength": 300 },
+    "license": {
+      "description": "SPDX license id for this theme, e.g. MIT, CC-BY-4.0, CC0-1.0",
+      "type": "string",
+      "enum": ["MIT", "Apache-2.0", "CC0-1.0", "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "GPL-3.0-only", "GPL-3.0-or-later"]
+    },
+    "type": {
+      "description": "What the theme styles. Only 'dock' is accepted today; 'island' and 'pack' arrive in phase 3.",
+      "type": "string",
+      "enum": ["dock"]
+    },
+    "minAppVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["minimal", "glass", "dark", "light", "colorful", "macos", "retro", "anime", "gaming", "neon", "pastel", "nature", "holiday", "other"]
+      }
+    },
+    "preview": {
+      "description": "Screenshot shown in the gallery. 1280x720 recommended.",
+      "type": "string",
+      "pattern": "^preview\\.(png|jpg|jpeg|webp)$"
+    },
+    "styles": {
+      "description": "The theme's stylesheet, relative to the theme folder.",
+      "const": "styles.css"
+    },
+    "permissions": {
+      "description": "Reserved for JS widgets (phase 3). Must be empty for now.",
+      "type": "array",
+      "maxItems": 0
+    }
+  }
+}
