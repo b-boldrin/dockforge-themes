@@ -8,8 +8,10 @@
   --df-border: 0;
   --df-shadow: inset 0 1px 0 #dfdfdf, inset 0 2px 0 #ffffff;
   --df-hover-lift: 0px;
-  --df-indicator-color: transparent;
-  --df-indicator-active-color: transparent;
+  /* This theme shows no mark of its own; these colors are for when one is chosen in the app. */
+  --df-indicator-color: #404040;
+  --df-indicator-active-color: #000080;
+  --df-indicator-offset: 2px;
   --df-tooltip-bg: #ffffe1;
   --df-tooltip-color: #000000;
   --df-separator-color: #808080;
