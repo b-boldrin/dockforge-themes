@@ -17,8 +17,8 @@
         "retro"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/ambar-crt/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/ambar-crt/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/ambar-crt/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/ambar-crt/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -53,8 +53,8 @@
         "minimal"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-classica/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-classica/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/barra-classica/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/barra-classica/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -89,8 +89,8 @@
         "minimal"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-flutuante/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-flutuante/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/barra-flutuante/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/barra-flutuante/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -126,8 +126,8 @@
         "minimal"
       ],
       "minAppVersion": "0.1.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/forge-glass/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/forge-glass/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/forge-glass/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/forge-glass/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -163,8 +163,8 @@
         "minimal"
       ],
       "minAppVersion": "0.1.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/midnight-pill/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/midnight-pill/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/midnight-pill/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/midnight-pill/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -200,8 +200,8 @@
         "glass"
       ],
       "minAppVersion": "0.2.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/natal-cristal/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/natal-cristal/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/natal-cristal/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/natal-cristal/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -236,8 +236,8 @@
         "dark"
       ],
       "minAppVersion": "0.2.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/noite-de-natal/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/noite-de-natal/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/noite-de-natal/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/noite-de-natal/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -272,8 +272,8 @@
         "minimal"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/papel/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/papel/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/papel/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/papel/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -308,8 +308,8 @@
         "light"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/prateleira/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/prateleira/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/prateleira/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/prateleira/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -344,8 +344,8 @@
         "light"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/retro-cinza/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/retro-cinza/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/retro-cinza/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/retro-cinza/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -354,8 +354,8 @@
         },
         {
           "path": "styles.css",
-          "size": 1854,
-          "sha256": "0ff7acf9d1e9e25b52e7b6d9ccbf5e67731cc62116fa679c51b4d0dc1a232f2d"
+          "size": 1973,
+          "sha256": "de38bd1549121252ccfcee8931727e02eac4466a2831af71403b5e80fb96a335"
         },
         {
           "path": "theme.json",
@@ -380,8 +380,8 @@
         "glass"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/segmentada/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/segmentada/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/segmentada/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/segmentada/preview.png",
       "files": [
         {
           "path": "preview.png",
@@ -416,8 +416,8 @@
         "minimal"
       ],
       "minAppVersion": "0.3.0",
-      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/transparente/",
-      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/transparente/preview.png",
+      "baseUrl": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/transparente/",
+      "preview": "https://raw.githubusercontent.com/b-boldrin/dockforge-themes/main/themes/transparente/preview.png",
       "files": [
         {
           "path": "preview.png",
