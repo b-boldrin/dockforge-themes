@@ -1,0 +1,46 @@
+/* Retrô cinza — gray, beveled, pixel-sharp: buttons you can almost press with a finger. */
+
+.df-dock {
+  --df-gap: 3px;
+  --df-padding: 3px 4px;
+  --df-radius: 0;
+  --df-bg: #c0c0c0;
+  --df-border: 0;
+  --df-shadow: inset 0 1px 0 #dfdfdf, inset 0 2px 0 #ffffff;
+  --df-hover-lift: 0px;
+  --df-indicator-color: transparent;
+  --df-indicator-active-color: transparent;
+  --df-tooltip-bg: #ffffe1;
+  --df-tooltip-color: #000000;
+  --df-separator-color: #808080;
+  --df-widget-bg: #c0c0c0;
+  --df-widget-color: #000000;
+  --df-font: Tahoma, "MS Sans Serif", "Segoe UI", sans-serif;
+  --raised: inset -1px -1px 0 #000000, inset 1px 1px 0 #ffffff, inset -2px -2px 0 #808080, inset 2px 2px 0 #dfdfdf;
+  --sunken: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #808080;
+}
+
+.df-item {
+  width: calc(var(--df-icon-size) + 10px);
+  height: calc(var(--df-icon-size) + 6px);
+  background: #c0c0c0;
+  box-shadow: var(--raised);
+}
+.df-icon { width: calc(var(--df-icon-size) * 0.75); height: calc(var(--df-icon-size) * 0.75); image-rendering: pixelated; }
+.df-item:active,
+.df-item.is-active {
+  box-shadow: inset 1px 1px 0 #000000, inset -1px -1px 0 #ffffff, inset 2px 2px 0 #808080;
+  /* The pressed button gets the dithered look: a checkerboard of white and gray. */
+  background: repeating-conic-gradient(#ffffff 0 25%, #c0c0c0 0 50%) 0 0 / 2px 2px;
+}
+.df-item.is-active .df-label { font-weight: 700; }
+.df-item:active .df-icon { filter: none; }
+.df-label { color: #000000; font-size: 11px; }
+.df-indicator { display: none; }
+
+.df-widget { border-radius: 0; box-shadow: var(--sunken); font-size: 11px; }
+.df-tooltip { border-radius: 0; border: 1px solid #000000; font-size: 11px; }
+.df-separator { box-shadow: 1px 0 0 #ffffff; }
+.df-group-dot { border-radius: 0; background: #808080; }
+.df-group-dot.is-current { background: #000080; }
+.df-empty { color: #000000; }

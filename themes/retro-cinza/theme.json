@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "retro-cinza",
+  "name": "Retrô cinza",
+  "version": "1.0.0",
+  "author": {
+    "name": "DockForge",
+    "github": "b-boldrin"
+  },
+  "description": "The gray, beveled desktop of the 90s: raised buttons, a pressed one for the app in front and a sunken clock.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.3.0",
+  "tags": [
+    "retro",
+    "light"
+  ],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}
