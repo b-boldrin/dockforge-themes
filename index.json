@@ -38,6 +38,78 @@
       ]
     },
     {
+      "id": "barra-classica",
+      "name": "Barra clássica",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "A flat, square, opaque bar from one end of the screen to the other, with a line under each open app. Made for app names next to the icons.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "dark",
+        "minimal"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-classica/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-classica/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 69073,
+          "sha256": "03cabd47c736abc6f2546790fb650bcb3f110b3b8980ef9d91629e6d9534e1cc"
+        },
+        {
+          "path": "styles.css",
+          "size": 1237,
+          "sha256": "77353af9e3afc7d6b15a77d2ed48b3bbe21beabf2201bd330716564db6cee7b7"
+        },
+        {
+          "path": "theme.json",
+          "size": 562,
+          "sha256": "fe9e3b71728f20c31d77178d1f205a8c0684bb71313450bfcd20752b6dc0ed58"
+        }
+      ]
+    },
+    {
+      "id": "barra-flutuante",
+      "name": "Barra flutuante",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "A full-width bar that does not touch the screen edges: margins all around and rounded corners.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "dark",
+        "minimal"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-flutuante/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/barra-flutuante/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 91228,
+          "sha256": "9ee67bf692bf8adee665950ef34321018be407366609f088e7a06a54e68b496f"
+        },
+        {
+          "path": "styles.css",
+          "size": 1220,
+          "sha256": "0b00f923910164e583d7d2f1af576531317b4febfc4ea056409d0048d9957e2d"
+        },
+        {
+          "path": "theme.json",
+          "size": 519,
+          "sha256": "52abdf98dfd9523222a27f8fae5ade0b0b052a40a66997f11cb50de489d23402"
+        }
+      ]
+    },
+    {
       "id": "forge-glass",
       "name": "Forge Glass",
       "version": "1.0.0",
@@ -217,6 +289,150 @@
           "path": "theme.json",
           "size": 469,
           "sha256": "cf5026a08ac9f24f8ec24a43a683d92f43d1ea7890d7f3e5b6cec1a080a10f33"
+        }
+      ]
+    },
+    {
+      "id": "prateleira",
+      "name": "Prateleira",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "A frosted glass shelf with a soft reflection under each icon and a big zoom when the mouse passes.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "glass",
+        "light"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/prateleira/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/prateleira/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 106694,
+          "sha256": "13c78aca9f7a849859e76db84b47dd045ec21d7c09ae63d7808f74450db95b36"
+        },
+        {
+          "path": "styles.css",
+          "size": 1077,
+          "sha256": "5a918b7b06115320a793b13f265eb0afc04c7f22ce85a70d565b8df0dbe355a1"
+        },
+        {
+          "path": "theme.json",
+          "size": 512,
+          "sha256": "125643146d97dc341849fa5f958315afbae27821e3720431a1b8d620af52ac91"
+        }
+      ]
+    },
+    {
+      "id": "retro-cinza",
+      "name": "Retrô cinza",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "The gray, beveled desktop of the 90s: raised buttons, a pressed one for the app in front and a sunken clock.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "retro",
+        "light"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/retro-cinza/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/retro-cinza/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 39169,
+          "sha256": "3d1fc9884058d9f7a2ec66e00616f4544c93d11b2d54771dd10b2a5983c7f4fe"
+        },
+        {
+          "path": "styles.css",
+          "size": 1854,
+          "sha256": "0ff7acf9d1e9e25b52e7b6d9ccbf5e67731cc62116fa679c51b4d0dc1a232f2d"
+        },
+        {
+          "path": "theme.json",
+          "size": 525,
+          "sha256": "d9e0960bf8c9a57fd28e47a473293a2cd22d91c5a6ef0a9d22f87b5f2cc8a529"
+        }
+      ]
+    },
+    {
+      "id": "segmentada",
+      "name": "Segmentada",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "No single bar: the apps sit in one rounded block and each widget in its own, with gaps between them.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "dark",
+        "glass"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/segmentada/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/segmentada/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 90290,
+          "sha256": "67947a2a2fa7da600a2dbc511a2a0cddf8daccd1c3933cdc874e7bddc1392622"
+        },
+        {
+          "path": "styles.css",
+          "size": 1469,
+          "sha256": "53b62a0f8c22c6fb9ad19efad3ffd6c413844f7acf56d8c314602d92a9b31b33"
+        },
+        {
+          "path": "theme.json",
+          "size": 513,
+          "sha256": "2c8fcf815ae583c301e91c590fa997774e79ed2ec046b1cefc5a05dda9f19b68"
+        }
+      ]
+    },
+    {
+      "id": "transparente",
+      "name": "Transparente",
+      "version": "1.0.0",
+      "author": {
+        "name": "DockForge",
+        "github": "b-boldrin"
+      },
+      "description": "An almost clear bar: the wallpaper shows through, with a hairline on top and soft marks under the open apps.",
+      "license": "MIT",
+      "type": "dock",
+      "tags": [
+        "glass",
+        "minimal"
+      ],
+      "minAppVersion": "0.3.0",
+      "baseUrl": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/transparente/",
+      "preview": "https://raw.githubusercontent.com/dockforge/dockforge-themes/main/themes/transparente/preview.png",
+      "files": [
+        {
+          "path": "preview.png",
+          "size": 98279,
+          "sha256": "e7e20afde8f8f29f3e625d46d489a2a6a17dd52c1ce4a19a02f2f1358a63ce57"
+        },
+        {
+          "path": "styles.css",
+          "size": 1136,
+          "sha256": "eb578540aeb06c348bc8b9fb78bfc3e684f7583ddbf5e33c55862c34f1411dbe"
+        },
+        {
+          "path": "theme.json",
+          "size": 528,
+          "sha256": "5c08f9bb292d3160f1f23d25fc159064a24ecc8bc3c7adfa218f94627dcf502b"
         }
       ]
     }
