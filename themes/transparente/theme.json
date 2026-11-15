@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "transparente",
+  "name": "Transparente",
+  "version": "1.0.0",
+  "author": {
+    "name": "DockForge",
+    "github": "b-boldrin"
+  },
+  "description": "An almost clear bar: the wallpaper shows through, with a hairline on top and soft marks under the open apps.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.3.0",
+  "tags": [
+    "glass",
+    "minimal"
+  ],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}

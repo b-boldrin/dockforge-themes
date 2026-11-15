@@ -1,0 +1,32 @@
+/* Transparente — the bar gets out of the way and the wallpaper shows through. */
+
+.df-dock {
+  --df-gap: 6px;
+  --df-padding: 4px 12px;
+  --df-radius: 0;
+  --df-bg: rgba(12, 12, 14, 0.22);
+  --df-border: 0;
+  --df-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  --df-hover-lift: -3px;
+  --df-indicator-color: rgba(255, 255, 255, 0.55);
+  --df-indicator-active-color: #ffffff;
+  --df-indicator-offset: -3px;
+  --df-tooltip-bg: rgba(12, 12, 14, 0.85);
+  --df-tooltip-color: #ffffff;
+  --df-separator-color: rgba(255, 255, 255, 0.25);
+  --df-widget-bg: transparent;
+  --df-widget-color: #ffffff;
+}
+
+/* Floating instead of edge to edge: a clear pane with a full outline. */
+.df-dock:not([data-layout="bar"]) {
+  --df-radius: 16px;
+  --df-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+/* Without a solid background, text and marks need their own contrast. */
+.df-widget, .df-label { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); }
+.df-icon { filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35)); }
+
+.df-item.is-running .df-indicator { width: 6px; height: 3px; border-radius: 2px; }
+.df-item.is-active .df-indicator { width: 16px; }
