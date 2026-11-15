@@ -1,0 +1,52 @@
+/* Segmentada — the dock is split into blocks: one for the apps, one for each widget. */
+
+.df-dock {
+  --df-gap: 8px;
+  --df-padding: 0;
+  --df-radius: 0;
+  --df-bg: transparent;
+  --df-border: 0;
+  --df-shadow: none;
+  --df-hover-lift: -4px;
+  --df-indicator-color: rgba(255, 255, 255, 0.45);
+  --df-indicator-active-color: #b6a6ff;
+  --df-indicator-offset: -5px;
+  --df-tooltip-bg: #23252d;
+  --df-tooltip-color: #ffffff;
+  --df-separator-color: rgba(255, 255, 255, 0.14);
+  --df-widget-bg: rgba(22, 24, 30, 0.88);
+  --df-widget-color: #eceef3;
+  --segment-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+.df-dock[data-layout="bar"] { padding: 6px 10px; }
+
+.df-apps {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 16px;
+  background: var(--df-widget-bg);
+  box-shadow: var(--segment-shadow);
+}
+.df-dock[data-position="left"] .df-apps,
+.df-dock[data-position="right"] .df-apps {
+  flex-direction: column;
+  padding: 12px 7px;
+}
+.df-widget {
+  border-radius: 16px;
+  box-shadow: var(--segment-shadow);
+  min-height: calc(var(--df-icon-size) + 14px);
+  box-sizing: border-box;
+}
+.df-island-now {
+  border-radius: 16px;
+  background: var(--df-widget-bg);
+  box-shadow: var(--segment-shadow);
+  padding: 7px 8px;
+  box-sizing: content-box;
+}
+
+.df-item.is-running .df-indicator { width: 5px; height: 5px; }
+.df-item.is-active .df-indicator { width: 12px; height: 4px; border-radius: 2px; }

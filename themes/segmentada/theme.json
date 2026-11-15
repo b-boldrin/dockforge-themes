@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "segmentada",
+  "name": "Segmentada",
+  "version": "1.0.0",
+  "author": {
+    "name": "DockForge",
+    "github": "b-boldrin"
+  },
+  "description": "No single bar: the apps sit in one rounded block and each widget in its own, with gaps between them.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.3.0",
+  "tags": [
+    "dark",
+    "glass"
+  ],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}
