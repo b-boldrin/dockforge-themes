@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "barra-flutuante",
+  "name": "Barra flutuante",
+  "version": "1.0.0",
+  "author": {
+    "name": "DockForge",
+    "github": "b-boldrin"
+  },
+  "description": "A full-width bar that does not touch the screen edges: margins all around and rounded corners.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.3.0",
+  "tags": [
+    "dark",
+    "minimal"
+  ],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}

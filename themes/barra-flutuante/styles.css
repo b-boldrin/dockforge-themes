@@ -1,0 +1,29 @@
+/* Barra flutuante — a full-width bar lifted off the screen edge, with rounded corners. */
+
+.df-dock {
+  --df-gap: 6px;
+  --df-padding: 6px 12px;
+  --df-radius: 14px;
+  --df-bg: #1f2126;
+  --df-border: 1px solid rgba(255, 255, 255, 0.08);
+  --df-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  --df-hover-lift: -4px;
+  --df-indicator-color: rgba(255, 255, 255, 0.4);
+  --df-indicator-active-color: #8ab4ff;
+  --df-indicator-offset: -4px;
+  --df-tooltip-bg: #2a2d34;
+  --df-tooltip-color: #ffffff;
+  --df-separator-color: rgba(255, 255, 255, 0.12);
+  --df-widget-bg: rgba(255, 255, 255, 0.05);
+  --df-widget-color: #e8eaee;
+}
+
+/* Edge to edge keeps its corners and gets a margin instead of going flat. */
+.df-dock[data-layout="bar"] { border-radius: var(--df-radius); }
+.df-dock[data-layout="bar"][data-position="bottom"] { margin: 0 10px 8px; }
+.df-dock[data-layout="bar"][data-position="top"] { margin: 8px 10px 0; }
+.df-dock[data-layout="bar"][data-position="left"] { margin: 10px 0 10px 8px; }
+.df-dock[data-layout="bar"][data-position="right"] { margin: 10px 8px 10px 0; }
+
+.df-item.is-running .df-indicator { width: 5px; height: 5px; }
+.df-item.is-active .df-indicator { width: 14px; height: 4px; border-radius: 2px; }
