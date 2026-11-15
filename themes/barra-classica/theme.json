@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "schemaVersion": 1,
+  "id": "barra-classica",
+  "name": "Barra clássica",
+  "version": "1.0.0",
+  "author": {
+    "name": "DockForge",
+    "github": "b-boldrin"
+  },
+  "description": "A flat, square, opaque bar from one end of the screen to the other, with a line under each open app. Made for app names next to the icons.",
+  "license": "MIT",
+  "type": "dock",
+  "minAppVersion": "0.3.0",
+  "tags": [
+    "dark",
+    "minimal"
+  ],
+  "preview": "preview.png",
+  "styles": "styles.css",
+  "permissions": []
+}
