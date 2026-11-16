@@ -385,13 +385,13 @@
       "files": [
         {
           "path": "preview.png",
-          "size": 90290,
-          "sha256": "67947a2a2fa7da600a2dbc511a2a0cddf8daccd1c3933cdc874e7bddc1392622"
+          "size": 97444,
+          "sha256": "d36b1f1ab147248930a07a6e7f27011d76d441dcb22407ee07ea1758f0704241"
         },
         {
           "path": "styles.css",
-          "size": 1469,
-          "sha256": "53b62a0f8c22c6fb9ad19efad3ffd6c413844f7acf56d8c314602d92a9b31b33"
+          "size": 1005,
+          "sha256": "81ef8646bc3e4b349d76bc4e8908510c952cffa31f793f783cd1f8f83ac6653e"
         },
         {
           "path": "theme.json",
