@@ -42,6 +42,8 @@ Most themes only change variables on `.df-dock`. Every variable has a default, s
 | `--df-separator-color` | white 18% | Line between pinned and open apps, and the group dots |
 | `--df-widget-bg` | white 7% | Background of widgets (now playing) |
 | `--df-widget-color` | same as tooltip text | Text of widgets (now playing, clock) |
+| `--df-modules` | `inline` | `detached` asks for split modules on a floating dock: the apps and each module get their own block. Bars and islands always keep them inside |
+| `--df-module-gap` | `10px` | Space between the blocks when modules are split |
 
 People can also change the icon size, the hover zoom, the accent color, the corners and the
 opacity in the settings window. Those choices are applied on top of your theme, so build it with
@@ -76,9 +78,22 @@ variables (as above) and it will keep working when someone tweaks it.
       <span class="df-meter-text"><span class="df-meter-label">CPU</span><span class="df-meter-value">23%</span></span>
     </span> …
   </div>
-  <div class="df-widget df-clock"><span class="df-clock-time"></span><span class="df-clock-date"></span></div>
+  <button class="df-widget df-module df-pomo">…</button>          <!-- pomodoro -->
+  <div class="df-widget df-module df-clock df-world">…</div>     <!-- the time in another city -->
+  <button class="df-widget df-module df-quick">                  <!-- quick panel: speakers, battery -->
+    <svg>…</svg> <svg class="df-quick-battery">…</svg>
+  </button>
+  <div class="df-widget df-module df-clock"><span class="df-clock-time"></span><span class="df-clock-date"></span></div>
 </div>
 ```
+
+Every block after the apps is a module: it has the classes `df-widget df-module` and a
+`data-module` attribute (`media`, `system`, `pomodoro`, `world`, `quick`, `clock`), always in that
+order. Style `.df-module` once and every module follows.
+
+- `data-modules`: `inline` (modules inside the dock) or `detached` (the dock has no surface; the
+  apps and each module carry `--df-bg`, `--df-border`, `--df-shadow` and `--df-radius`). A theme
+  asks for `detached` with `--df-modules: detached`; the user can override it on floating docks.
 
 - `.is-running`: the app has at least one open window.
 - `.is-active`: the app was in front before you clicked the dock.
