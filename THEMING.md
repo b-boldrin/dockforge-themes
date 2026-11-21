@@ -40,10 +40,6 @@ Most themes only change variables on `.df-dock`. Every variable has a default, s
 | `--df-tooltip-color` | white | App name bubble text |
 | `--df-font` | system UI font | Font of the app name bubble |
 | `--df-separator-color` | white 18% | Line between pinned and open apps, and the group dots |
-| `--df-widget-bg` | white 7% | Background of widgets (quick panel, clock) |
-| `--df-widget-color` | same as tooltip text | Text of widgets (quick panel, clock) |
-| `--df-modules` | `inline` | `detached` asks for split modules on a floating dock: the apps and each module get their own block. Bars and islands always keep them inside |
-| `--df-module-gap` | `10px` | Space between the blocks when modules are split |
 
 People can also change the icon size, the hover zoom, the accent color, the corners and the
 opacity in the settings window. Those choices are applied on top of your theme, so build it with
@@ -67,20 +63,8 @@ variables (as above) and it will keep working when someone tweaks it.
     …
   </div>
   <span class="df-spacer"></span>                 <!-- grows in the edge-to-edge layout -->
-  <button class="df-widget df-module df-quick">                  <!-- quick panel: speakers -->
-    <svg>…</svg>
-  </button>
-  <div class="df-widget df-module df-clock"><span class="df-clock-time"></span><span class="df-clock-date"></span></div>
 </div>
 ```
-
-Every block after the apps is a module: it has the classes `df-widget df-module` and a
-`data-module` attribute (`quick`, `clock`), always in that
-order. Style `.df-module` once and every module follows.
-
-- `data-modules`: `inline` (modules inside the dock) or `detached` (the dock has no surface; the
-  apps and each module carry `--df-bg`, `--df-border`, `--df-shadow` and `--df-radius`). A theme
-  asks for `detached` with `--df-modules: detached`; the user can override it on floating docks.
 
 - `.is-running`: the app has at least one open window.
 - `.is-active`: the app was in front before you clicked the dock.
@@ -91,7 +75,7 @@ order. Style `.df-module` once and every module follows.
 - `data-position`: `bottom`, `top`, `left` or `right`, the screen edge the dock is on. Side docks
   are vertical (`flex-direction: column`).
 - `data-layout`: `float` (sized to its icons), `bar` (from one end of the screen to the other) or
-  `island` (a small pill with the app in front and the widgets; the other icons appear when the
+  `island` (a small pill with the app in front; the other icons appear when the
   pointer is over it).
 - `data-align`: `start`, `center` or `end`, where along its edge a float or island dock sits.
 - `.df-item:hover`, `::before`, `::after`, animations and `@keyframes` all work.
